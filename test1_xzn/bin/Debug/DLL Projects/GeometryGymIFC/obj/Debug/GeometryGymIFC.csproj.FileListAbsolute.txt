@@ -1,0 +1,9 @@
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\bin\Debug\GeometryGymIFC.dll
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\bin\Debug\GeometryGymIFC.pdb
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\bin\Debug\Newtonsoft.Json.dll
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\bin\Debug\Newtonsoft.Json.xml
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\obj\Debug\GeometryGymIFC.csprojAssemblyReference.cache
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\obj\Debug\GeometryGymIFC.csproj.CoreCompileInputs.cache
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\obj\Debug\GeometryGymIFC.csproj.CopyComplete
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\obj\Debug\GeometryGymIFC.dll
+E:\Google Dowmloads\GeometryGymIFC-master\DLL Projects\GeometryGymIFC\obj\Debug\GeometryGymIFC.pdb

@@ -1,0 +1,19 @@
+﻿<Window x:Class="test1_xzn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test1_xzn"
+        mc:Ignorable="d"
+        Title="test2" Height="450" Width="800">
+    <Grid Margin="0,0,0.333,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="295*"/>
+            <ColumnDefinition Width="498*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" HorizontalAlignment="Center" Width="105" RenderTransformOrigin="1.21,7.507" Margin="87,168,103.333,210" Click="Button_Click"/>
+        <TextBox x:Name="fileTextBox" HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="478" Grid.Column="1" Margin="9.667,168,0,0" FontFamily="aa" Background="{x:Null}"/>
+
+    </Grid>
+</Window>
