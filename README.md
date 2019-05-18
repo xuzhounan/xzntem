@@ -1,0 +1,2 @@
+# xzntem
+button可以打开ifc文件，在textbox程序里显示打开的ifc文件地址
