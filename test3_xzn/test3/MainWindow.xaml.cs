@@ -40,7 +40,7 @@ namespace test3
                 string filename  = dlg.FileName;
                 fileTextBox.Text = filename;
                 var model = IfcStore.Open(filename);
-                var allDoors = model.Instances.OfType<Xbim.Ifc4.Interfaces.IIfcDoor>();
+                var allDoors = model.Instances.OfType<Xbim.Ifc4.Interfaces.IIfcSite>();
                 //IIfcDoor thedoor = allDoors.First<IIfcDoor>();
                 var pEnumerable= allDoors.GetEnumerator();
                 var thedoor = pEnumerable.Current;
@@ -53,7 +53,6 @@ namespace test3
            .Where(r => r.RelatingPropertyDefinition is IIfcPropertySet)
            .SelectMany(r => ((IIfcPropertySet)r.RelatingPropertyDefinition).HasProperties)
            .OfType<IIfcPropertySingleValue>();
-                    
                     if (thedoor ==allDoors .First ())
                     {
                         foreach (var property in properties)
