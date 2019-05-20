@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xbim.IO.CobieExpress</name>
+    </assembly>
+    <members>
+        <member name="M:Xbim.IO.CobieExpress.CobieModel.#ctor">
+            <summary>
+            Creates memory model inside
+            </summary>
+        </member>
+        <member name="M:Xbim.IO.CobieExpress.CobieModel.#ctor(System.String)">
+            <summary>
+            Creates EsentModel inside
+            </summary>
+            <param name="esentDbFile"></param>
+        </member>
+        <member name="M:Xbim.IO.CobieExpress.CobieModel.OpenStep21(System.IO.Stream,System.Int64,System.Int32)">
+            <summary>
+            This constructor only opens an in memory model
+            </summary>
+            <param name="input"></param>
+            <param name="streamSize"></param>
+            <param name="labelFrom"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,25 @@
+﻿<Window x:Class="test4_xzn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test4_xzn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="28*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="463*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="选择文件"  Content="选择文件" HorizontalAlignment="Left" Width="112" Height=" 43" RenderTransformOrigin="1.21,7.507" Margin="32,38,0,0" Click="Button_Click" VerticalAlignment="Top" Grid.ColumnSpan="4"/>
+        <Button x:Name="保存修改" Content="保存修改" HorizontalAlignment="Right"  Width="112" Height=" 43" RenderTransformOrigin="1.21,7.507" Margin="0,38,10.334,0" Click="Button_Click_1" VerticalAlignment="Top" Grid.Column="6" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="fileTextBox" HorizontalAlignment="Stretch"  Height="43" TextWrapping="Wrap" Text="" VerticalAlignment="Top"  Margin="10,38,104.694,0" FontFamily="aa" Background="{x:Null}" Grid.Column="5" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="DataView"   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="32,88,10.334,27.667" Grid.ColumnSpan="8" />
+    </Grid>
+</Window>
