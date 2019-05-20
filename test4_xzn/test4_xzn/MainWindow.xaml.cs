@@ -53,7 +53,7 @@ namespace test4_xzn
                 var pEnumerable = allifcsite.GetEnumerator();
                 var thesite = pEnumerable.Current;
                 DataTable dataTable = new DataTable();
-                 while (thesite != allifcsite.Last())
+                while (thesite != allifcsite.Last())
                 {
                     pEnumerable.MoveNext();
                     thesite = pEnumerable.Current;
@@ -85,7 +85,7 @@ namespace test4_xzn
         {
 
             using (var model = IfcStore.Open(filename, null, null, null, XbimDBAccess.ReadWrite, -1))
-            { 
+            {
                 var tem = model.IsTransactional;
                 var allifcsite = model.Instances.OfType<IIfcSite>();
                 //var pEnumerable = allifcsite.GetEnumerator();
@@ -96,27 +96,27 @@ namespace test4_xzn
            .Where(r => r.RelatingPropertyDefinition is IIfcPropertySet)
            .SelectMany(r => ((IIfcPropertySet)r.RelatingPropertyDefinition).HasProperties)
            .OfType<IIfcPropertySingleValue>();
-                using ( var txn = model.BeginTransaction())
-                    { 
-                   
+                using (var txn = model.BeginTransaction())
+                {
+
                     int u = 0;
                     foreach (var property in properties)
                     {
                         property.NominalValue = new IfcLabel((DataView.Columns[u].GetCellContent(DataView.Items[0]) as TextBlock).Text);
                         u++;
                     }
-                    thesite .Name = thesite.Name + "checked";
+                    thesite.Name = thesite.Name + "checked";
                     txn.Commit();
-                    try { model.SaveAs(filename ); }
+                    try { model.SaveAs(filename); }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.ToString());
                     }
                     MessageBox.Show("ok");
-                    }
-              
-            }
                 }
+
+            }
+        }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
